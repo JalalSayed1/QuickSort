@@ -5,12 +5,12 @@ void quicksort(int v[], int left, int right);
 
 /**
  * @brief Quick sort algorithm using the middle element as pivot.
- * 
+ *
  * @param v  Array to be sorted.
  * @param left  Left index of the array.
  * @param right Right index of the array.
  */
-void quicksort(int v[], int left, int right){
+void quicksort(int v[], int left, int right) {
 
     int i, last;
     void swap(int v[], int i, int j);
@@ -31,5 +31,4 @@ void quicksort(int v[], int left, int right){
     swap(v, left, last); // move the pivot to its final position.
     quicksort(v, left, last - 1);
     quicksort(v, last + 1, right);
-
 }
